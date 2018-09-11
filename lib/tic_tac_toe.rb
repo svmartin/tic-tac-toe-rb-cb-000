@@ -70,7 +70,7 @@ def turn(board)
   user_move = gets.strip
   user_move = input_to_index(user_move)
   if valid_move?(board, user_move)
-    player_move(board, user_move, character)
+    player_move(board, user_move, current_player(board))
     display_board(board)
   else
     turn(board)
