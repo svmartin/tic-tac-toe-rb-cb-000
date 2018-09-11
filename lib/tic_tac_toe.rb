@@ -93,5 +93,9 @@ def play(board)
   while !over?(board)
     turn(board)
   end
-  puts "Game over!"
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  else
+    puts "Cat's Game!"
+  end
 end
