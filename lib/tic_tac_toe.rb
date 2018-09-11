@@ -92,6 +92,7 @@ end
 def play
   while !over?(board)
     turn(board)
+    over?(board)
   end
   puts "Game over!"
 end
