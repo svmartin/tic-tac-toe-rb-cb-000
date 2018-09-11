@@ -89,10 +89,9 @@ def winner(board)
   end
 end
 
-def play
+def play(board)
   while !over?(board)
     turn(board)
-    over?(board)
   end
   puts "Game over!"
 end
